@@ -1,0 +1,32 @@
+Requisite Location Report
+Summary report:
+TST2LIVE objects:
+    Objects with requisites in library TST2LIVE: 7
+    Objects with requisites in library TST2LIVE: 7
+    Objects with requisites in library TST2SRC: 13
+
+Detail report:
+TST2LIVE objects:
+    Objects with requisites in library TST2LIVE:
+        *FILE LF        TST2LIVE/CUSMSTL1                   
+        *FILE LF        TST2LIVE/CUSMSTL2                   
+        *FILE LF        TST2LIVE/CUSMSTL3                   
+        *FILE DSPF      TST2LIVE/MNTMENU                    
+        *FILE DSPF      TST2LIVE/SCHNAMD                    
+        *FILE DSPF      TST2LIVE/SCHZIPD                    
+        *PGM RPGLE      TST2LIVE/CUSTMAINT                  
+    Objects with requisites in library TST2SRC:
+        *CMD            TST2LIVE/CUSTMAINT                  
+        *FILE PF        TST2LIVE/CUSMST                     
+        *FILE LF        TST2LIVE/CUSMSTL1                   
+        *FILE LF        TST2LIVE/CUSMSTL2                   
+        *FILE LF        TST2LIVE/CUSMSTL3                   
+        *FILE DSPF      TST2LIVE/MAINMENU                   
+        *FILE DSPF      TST2LIVE/MNTMENU                    
+        *FILE DSPF      TST2LIVE/SCHNAMD                    
+        *FILE DSPF      TST2LIVE/SCHZIPD                    
+        *MODULE RPGLE   TST2LIVE/CUSMAIN                    
+        *MODULE RPGLE   TST2LIVE/CUSMNT                     
+        *MODULE RPGLE   TST2LIVE/SCHNAM                     
+        *MODULE RPGLE   TST2LIVE/SCHZIP                     
+End of Requisite Location Report.

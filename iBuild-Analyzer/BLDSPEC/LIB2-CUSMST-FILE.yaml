@@ -1,0 +1,24 @@
+---
+targets:
+  LIB2-CUSMST-FILE :
+    objlib: LIB2
+    objname: CUSMST
+    objtype: FILE
+    objattr: PF
+    requisites :
+      - QDDSSRC.FILE/CUSMST.MBR
+    requisiteyamlrecords :
+      - LIBL-QDDSSRC-SRCMBR-CUSMST
+    command: EDOCRTOBJ
+    parameters:
+      - "BLDTGT($(LIB2)/CUSMST)"
+      - "OBJTYPE(*FILE)"
+      - "OBJATTR(PF)"
+      - "CMD(CRTPF)"
+      - "CMDPARMS(' FILE($(LIB2)/CUSMST) SRCFILE(QDDSSRC) SRCMBR(CUSMST) TEXT(''Customer Master'')')"
+  LIBL-QDDSSRC-SRCMBR-CUSMST :
+    objlib: "*LIBL"
+    objname: QDDSSRC
+    objtype: SRCMBR
+    objattr: "PF"
+    mbrname: CUSMST

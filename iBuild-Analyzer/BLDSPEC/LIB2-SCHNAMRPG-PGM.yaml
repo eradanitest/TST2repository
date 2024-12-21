@@ -1,0 +1,31 @@
+---
+targets:
+  LIB2-SCHNAMRPG-PGM :
+    objlib: LIB2
+    objname: SCHNAMRPG
+    objtype: PGM
+    objattr: RPGLE
+    requisites :
+      - QRPGLESRC.FILE/SCHNAMRPG.MBR
+      - CUSMSTL3.FILE
+      - SCHNAMD.FILE
+    requisiteyamlrecords :
+      - LIBL-QRPGLESRC-SRCMBR-SCHNAMRPG
+      - LIB2-CUSMSTL3-FILE
+      - LIB2-SCHNAMD-FILE
+    command: CRTBNDRPG
+    parameters:
+      - "PGM($(LIB2)/SCHNAMRPG)"
+      - "USRPRF(*USER)"
+      - "DFTACTGRP(*YES)"
+      - "SRCFILE(QRPGLESRC)"
+      - "SRCMBR(SCHNAMRPG)"
+      - "TGTCCSID(37)"
+      - "SRTSEQ(*HEX)"
+      - "LANGID(*JOBRUN)"
+  LIBL-QRPGLESRC-SRCMBR-SCHNAMRPG :
+    objlib: "*LIBL"
+    objname: QRPGLESRC
+    objtype: SRCMBR
+    objattr: "RPGLE"
+    mbrname: SCHNAMRPG

@@ -1,0 +1,23 @@
+Source Location Report
+Summary report:
+TST2LIVE objects:
+    Objects with source in library TST2SRC: 14
+
+Detail report:
+TST2LIVE objects:
+    Objects with source in library TST2SRC:
+        *MODULE RPGLE   TST2LIVE/CUSMAIN                    
+        *FILE DSPF      TST2LIVE/MAINMENU                   
+        *MODULE RPGLE   TST2LIVE/CUSMNT                     
+        *FILE LF        TST2LIVE/CUSMSTL1                   
+        *FILE PF        TST2LIVE/CUSMST                     
+        *FILE DSPF      TST2LIVE/MNTMENU                    
+        *MODULE RPGLE   TST2LIVE/SCHNAM                     
+        *FILE LF        TST2LIVE/CUSMSTL3                   
+        *FILE DSPF      TST2LIVE/SCHNAMD                    
+        *MODULE RPGLE   TST2LIVE/SCHZIP                     
+        *FILE LF        TST2LIVE/CUSMSTL2                   
+        *FILE DSPF      TST2LIVE/SCHZIPD                    
+        *PGM RPGLE      TST2LIVE/SCHNAMRPG                  
+        *CMD            TST2LIVE/CUSTMAINT                  
+End of Source Location Report.

@@ -1,0 +1,42 @@
+---
+targets:
+  LIB2-CUSTMAINT-PGM :
+    objlib: LIB2
+    objname: CUSTMAINT
+    objtype: PGM
+    objattr: RPGLE
+    requisites :
+      - CUSMAIN.MODULE
+      - CUSMNT.MODULE
+      - SCHNAM.MODULE
+      - SCHZIP.MODULE
+      - MAINMENU.FILE
+      - CUSMSTL1.FILE
+      - MNTMENU.FILE
+      - CUSMSTL3.FILE
+      - SCHNAMD.FILE
+      - CUSMSTL2.FILE
+      - SCHZIPD.FILE
+    requisiteyamlrecords :
+      - LIB2-CUSMAIN-MODULE
+      - LIB2-CUSMNT-MODULE
+      - LIB2-SCHNAM-MODULE
+      - LIB2-SCHZIP-MODULE
+      - LIB2-MAINMENU-FILE
+      - LIB2-CUSMSTL1-FILE
+      - LIB2-MNTMENU-FILE
+      - LIB2-CUSMSTL3-FILE
+      - LIB2-SCHNAMD-FILE
+      - LIB2-CUSMSTL2-FILE
+      - LIB2-SCHZIPD-FILE
+    command: CRTPGM
+    parameters:
+      - "PGM($(LIB2)/CUSTMAINT)"
+      - "USRPRF(*USER)"
+      - "MODULE(CUSMAIN CUSMNT SCHNAM SCHZIP)"
+      - "ENTMOD(CUSMAIN)"
+      - "ACTGRP(QILE)"
+      - "DETAIL(*BASIC)"
+      - "ALWUPD(*YES)"
+      - "ALWLIBUPD(*NO)"
+      - "ALWRINZ(*NO)"
